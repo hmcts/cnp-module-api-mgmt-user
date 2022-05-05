@@ -37,10 +37,10 @@ variable "state" {
   description = "User state, e.g. active, pending or blocked"
   default     = "active"
   validation {
-    condition     = anytrue([
-        var.state == "active",
-        var.state == "blocked",
-        var.state == "pending"
+    condition = anytrue([
+      var.state == "active",
+      var.state == "blocked",
+      var.state == "pending"
     ])
     error_message = "Must be a valid user state."
   }
