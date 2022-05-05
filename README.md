@@ -29,4 +29,4 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_user_id"></a> [user\_id](#output\_user\_id) | ID of the user |
+| <a name="output_id"></a> [id](#output\_id) | ID of the user |
