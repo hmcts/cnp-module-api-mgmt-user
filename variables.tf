@@ -6,6 +6,11 @@ variable "api_mgmt_name" {
   description = "Name of the apim service, e.g. core-infra-demo"
 }
 
+variable "unique_name" {
+  type        = string
+  description = "User resource identifying name - unique within the APIM instance"
+}
+
 variable "email" {
   type        = string
   description = "User email"
@@ -19,11 +24,6 @@ variable "first_name" {
 variable "last_name" {
   type        = string
   description = "User last name"
-}
-
-variable "user_id" {
-  type        = string
-  description = "Product User ID - unique within APIM service"
 }
 
 variable "note" {
